@@ -3,6 +3,9 @@ import InputPreview from '../components/InputPreview';
 import {connect} from 'react-redux';
 import {setMessage} from '../actions/message';
 import {Link} from 'react-router-dom';
+import Header from '../components/Header';
+//const db = require('../db');
+import 'bootstrap';
 
 class App extends Component {
     _onChange = (value) => {
@@ -12,6 +15,8 @@ class App extends Component {
       const {message} = this.props.messageReducer;
       return (
         <div>
+          <Header/>
+          
          <InputPreview
            value={message}
            onChange={this._onChange}/>
