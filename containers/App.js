@@ -6,23 +6,21 @@ import {Link} from 'react-router-dom';
 import Header from '../components/Header';
 //const db = require('../db');
 import 'bootstrap';
-
+import logo from '../images/howling_bowl_logo.jpg'
 class App extends Component {
-    _onChange = (value) => {
-      this.props.dispatch(setMessage(value))
-    }
+    _
     render () {
-      const {message} = this.props.messageReducer;
       return (
-        <div>
-          <Header/>
-          
-         <InputPreview
-           value={message}
-           onChange={this._onChange}/>
-          <Link to="/about">
-           <button>Go to About</button>
-          </Link>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "100%"
+          }}
+        ><Link to="/welcome">
+         <img src={logo} alt="Logo" />
+         </Link>
         </div>
       )
     }
