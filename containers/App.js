@@ -19,7 +19,7 @@ class App extends Component {
             height: "100%"
           }}
         ><Link to="/welcome">
-         <img src={logo} alt="Logo" />
+         <img src={logo} alt="Logo" style={{width: "400px"}} />
          </Link>
         </div>
       )
