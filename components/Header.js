@@ -10,13 +10,9 @@ export default class Header extends React.Component {
                     <Navbar.Brand href="#home">The Howling Bowl</Navbar.Brand>
                     <Nav className="mr-auto">
                         <Nav.Link href="/about">About</Nav.Link>
-                        <Nav.Link href="#features">Features</Nav.Link>
-                        <Nav.Link href="#pricing">Pricing</Nav.Link>
+                        <Nav.Link href="/food">Food</Nav.Link>
+                        <Nav.Link href="/reserve">Join Us</Nav.Link>
                     </Nav>
-                    <Form inline>
-                        <FormControl type="text" placeholder="Search" className="mr-sm-2" onChange={this._onChange}/>
-                        <Button variant="outline-primary">Search</Button>
-                    </Form>
                 </Navbar>
                 
             </div>
